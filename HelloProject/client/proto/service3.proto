@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package gofiles2;
+
+message Request {
+    string s = 1;
+}
+
+message Response {
+}
+
+service SplitService {
+    rpc Split (Request) returns (Response);
+}
